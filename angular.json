@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "middle-benchers"
+  "defaultProject": "middle-benchers",
+  "cli": {
+    "analytics": false
+  }
 }
