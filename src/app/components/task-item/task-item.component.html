@@ -1,4 +1,9 @@
-<div class="task">
-    <h3>{{task.text}}</h3>
-    <p>{{task.day}}</p>
+<div [ngClass] = "{ reminder: task.gender}" class="task">
+    <h3>{{task.name}} 
+        <fa-icon
+            [icon]="faTimes"
+            [ngStyle] ="{'color': color}"
+            (click) = "onDelete(task)"
+        ></fa-icon> </h3>
+    <p>{{task.stream}}</p>
 </div>
